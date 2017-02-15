@@ -141,7 +141,7 @@ static NSInteger Count = 100;
 //    [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:UITrackingRunLoopMode];
 
     /*
-     4,设置Mode为NSDefaultRunLoopMode
+     4,设置Mode为NSRunLoopCommonModes
      scrollview滚动 或 停止，对定时器没影响，定时器一直开启；
      */
 

@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		025C0CD31E545B3B00FDE43B /* NSDefaultRunLoopModeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 025C0CD21E545B3B00FDE43B /* NSDefaultRunLoopModeController.m */; };
+		025C0CD61E545B4B00FDE43B /* UITrackingRunLoopModeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 025C0CD51E545B4B00FDE43B /* UITrackingRunLoopModeController.m */; };
+		025C0CD91E545B6500FDE43B /* NSDefaultRunLoopModeAndUITrackingRunLoopModeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 025C0CD81E545B6500FDE43B /* NSDefaultRunLoopModeAndUITrackingRunLoopModeController.m */; };
+		025C0CDC1E545B7800FDE43B /* NSRunLoopCommonModesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 025C0CDB1E545B7800FDE43B /* NSRunLoopCommonModesController.m */; };
+		025C0CE11E545EA000FDE43B /* ScheduledTimerWithTimeIntervalController.m in Sources */ = {isa = PBXBuildFile; fileRef = 025C0CE01E545EA000FDE43B /* ScheduledTimerWithTimeIntervalController.m */; };
+		025C0CE61E54605E00FDE43B /* NSThreadAndNSTimerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 025C0CE51E54605E00FDE43B /* NSThreadAndNSTimerController.m */; };
+		025C0CE91E5460B500FDE43B /* GCDAndNSTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 025C0CE81E5460B500FDE43B /* GCDAndNSTimerViewController.m */; };
 		02759A5D1E11189800D7D5B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 02759A5C1E11189800D7D5B4 /* main.m */; };
 		02759A601E11189800D7D5B4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 02759A5F1E11189800D7D5B4 /* AppDelegate.m */; };
 		02759A631E11189800D7D5B4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02759A621E11189800D7D5B4 /* ViewController.m */; };
@@ -35,6 +42,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		025C0CD11E545B3B00FDE43B /* NSDefaultRunLoopModeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDefaultRunLoopModeController.h; sourceTree = "<group>"; };
+		025C0CD21E545B3B00FDE43B /* NSDefaultRunLoopModeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDefaultRunLoopModeController.m; sourceTree = "<group>"; };
+		025C0CD41E545B4B00FDE43B /* UITrackingRunLoopModeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITrackingRunLoopModeController.h; sourceTree = "<group>"; };
+		025C0CD51E545B4B00FDE43B /* UITrackingRunLoopModeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITrackingRunLoopModeController.m; sourceTree = "<group>"; };
+		025C0CD71E545B6500FDE43B /* NSDefaultRunLoopModeAndUITrackingRunLoopModeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDefaultRunLoopModeAndUITrackingRunLoopModeController.h; sourceTree = "<group>"; };
+		025C0CD81E545B6500FDE43B /* NSDefaultRunLoopModeAndUITrackingRunLoopModeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDefaultRunLoopModeAndUITrackingRunLoopModeController.m; sourceTree = "<group>"; };
+		025C0CDA1E545B7800FDE43B /* NSRunLoopCommonModesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSRunLoopCommonModesController.h; sourceTree = "<group>"; };
+		025C0CDB1E545B7800FDE43B /* NSRunLoopCommonModesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSRunLoopCommonModesController.m; sourceTree = "<group>"; };
+		025C0CDF1E545EA000FDE43B /* ScheduledTimerWithTimeIntervalController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduledTimerWithTimeIntervalController.h; sourceTree = "<group>"; };
+		025C0CE01E545EA000FDE43B /* ScheduledTimerWithTimeIntervalController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduledTimerWithTimeIntervalController.m; sourceTree = "<group>"; };
+		025C0CE41E54605E00FDE43B /* NSThreadAndNSTimerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSThreadAndNSTimerController.h; sourceTree = "<group>"; };
+		025C0CE51E54605E00FDE43B /* NSThreadAndNSTimerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSThreadAndNSTimerController.m; sourceTree = "<group>"; };
+		025C0CE71E5460B500FDE43B /* GCDAndNSTimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAndNSTimerViewController.h; sourceTree = "<group>"; };
+		025C0CE81E5460B500FDE43B /* GCDAndNSTimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAndNSTimerViewController.m; sourceTree = "<group>"; };
 		02759A581E11189800D7D5B4 /* TimerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02759A5C1E11189800D7D5B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		02759A5E1E11189800D7D5B4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -78,6 +99,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		025C0CDD1E545E4100FDE43B /* timerWithTimeInterval创建NSTimer */ = {
+			isa = PBXGroup;
+			children = (
+				025C0CD11E545B3B00FDE43B /* NSDefaultRunLoopModeController.h */,
+				025C0CD21E545B3B00FDE43B /* NSDefaultRunLoopModeController.m */,
+				025C0CD41E545B4B00FDE43B /* UITrackingRunLoopModeController.h */,
+				025C0CD51E545B4B00FDE43B /* UITrackingRunLoopModeController.m */,
+				025C0CD71E545B6500FDE43B /* NSDefaultRunLoopModeAndUITrackingRunLoopModeController.h */,
+				025C0CD81E545B6500FDE43B /* NSDefaultRunLoopModeAndUITrackingRunLoopModeController.m */,
+				025C0CDA1E545B7800FDE43B /* NSRunLoopCommonModesController.h */,
+				025C0CDB1E545B7800FDE43B /* NSRunLoopCommonModesController.m */,
+			);
+			name = "timerWithTimeInterval创建NSTimer";
+			sourceTree = "<group>";
+		};
+		025C0CDE1E545E6B00FDE43B /* scheduledTimerWithTimeInterval创建NSTimer */ = {
+			isa = PBXGroup;
+			children = (
+				025C0CDF1E545EA000FDE43B /* ScheduledTimerWithTimeIntervalController.h */,
+				025C0CE01E545EA000FDE43B /* ScheduledTimerWithTimeIntervalController.m */,
+			);
+			name = "scheduledTimerWithTimeInterval创建NSTimer";
+			sourceTree = "<group>";
+		};
+		025C0CE21E545FA900FDE43B /* GCD创建NSTimer */ = {
+			isa = PBXGroup;
+			children = (
+				025C0CE71E5460B500FDE43B /* GCDAndNSTimerViewController.h */,
+				025C0CE81E5460B500FDE43B /* GCDAndNSTimerViewController.m */,
+			);
+			name = "GCD创建NSTimer";
+			sourceTree = "<group>";
+		};
+		025C0CE31E545FAD00FDE43B /* NSThread与NSTimer */ = {
+			isa = PBXGroup;
+			children = (
+				025C0CE41E54605E00FDE43B /* NSThreadAndNSTimerController.h */,
+				025C0CE51E54605E00FDE43B /* NSThreadAndNSTimerController.m */,
+			);
+			name = "NSThread与NSTimer";
+			sourceTree = "<group>";
+		};
 		02759A4F1E11189800D7D5B4 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +164,10 @@
 		02759A5A1E11189800D7D5B4 /* TimerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				025C0CE31E545FAD00FDE43B /* NSThread与NSTimer */,
+				025C0CE21E545FA900FDE43B /* GCD创建NSTimer */,
+				025C0CDD1E545E4100FDE43B /* timerWithTimeInterval创建NSTimer */,
+				025C0CDE1E545E6B00FDE43B /* scheduledTimerWithTimeInterval创建NSTimer */,
 				02759A5E1E11189800D7D5B4 /* AppDelegate.h */,
 				02759A5F1E11189800D7D5B4 /* AppDelegate.m */,
 				02759A611E11189800D7D5B4 /* ViewController.h */,
@@ -276,8 +343,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				025C0CE61E54605E00FDE43B /* NSThreadAndNSTimerController.m in Sources */,
+				025C0CDC1E545B7800FDE43B /* NSRunLoopCommonModesController.m in Sources */,
 				02759A631E11189800D7D5B4 /* ViewController.m in Sources */,
 				02759A601E11189800D7D5B4 /* AppDelegate.m in Sources */,
+				025C0CE91E5460B500FDE43B /* GCDAndNSTimerViewController.m in Sources */,
+				025C0CE11E545EA000FDE43B /* ScheduledTimerWithTimeIntervalController.m in Sources */,
+				025C0CD31E545B3B00FDE43B /* NSDefaultRunLoopModeController.m in Sources */,
+				025C0CD91E545B6500FDE43B /* NSDefaultRunLoopModeAndUITrackingRunLoopModeController.m in Sources */,
+				025C0CD61E545B4B00FDE43B /* UITrackingRunLoopModeController.m in Sources */,
 				02759A5D1E11189800D7D5B4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -516,6 +590,7 @@
 				02759A871E11189900D7D5B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		02759A881E11189900D7D5B4 /* Build configuration list for PBXNativeTarget "TimerDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +599,7 @@
 				02759A8A1E11189900D7D5B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		02759A8B1E11189900D7D5B4 /* Build configuration list for PBXNativeTarget "TimerDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +608,7 @@
 				02759A8D1E11189900D7D5B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
