@@ -131,7 +131,6 @@ GCD中的Timer应该是最灵活的，而且是多线程的。GCD中的Timer是�
     dispatch_resume(_timert);
 }
 ```
-demo源码：**[TimerDemo](https://github.com/xianChaoFan/TimerDemo)**
 ####参考延伸：
 [iOS: NSTimer使用小记](https://www.mgenware.com/blog/?p=459)
 [深入理解RunLoop](http://www.cocoachina.com/ios/20150601/11970.html)
