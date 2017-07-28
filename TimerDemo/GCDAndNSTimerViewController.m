@@ -14,7 +14,7 @@
 }
 
 @property (weak, nonatomic) IBOutlet UILabel *timerLbl;
-@property (nonatomic, strong) NSTimer *timer;
+//@property (nonatomic, strong) NSTimer *timer;
 
 @end
 
@@ -40,13 +40,33 @@ static NSInteger Count = 100;
     _timert = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, queue);
     //使用dispatch_source_set_timer函数设置timer参数
     dispatch_source_set_timer(_timert, dispatch_time(DISPATCH_TIME_NOW, 0), interval, 0);
+    
+    __weak __typeof(&*self)weakSelf = self;
     //设置回调
     dispatch_source_set_event_handler(_timert, ^()
                                       {
+                                          Count--;
+                                          
+                                          dispatch_async(dispatch_get_main_queue(), ^{
+                                              weakSelf.timerLbl.text = [NSString stringWithFormat:@"%zi",Count];
+                                          });
+                                          
                                           NSLog(@"Timer %@", [NSThread currentThread]);
                                       });
     //dispatch_source默认是Suspended状态，通过dispatch_resume函数开始它
     dispatch_resume(_timert);
 }
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    
+    if (_timert) {
+        dispatch_cancel(_timert);
+    }
+    
+    Count = 100;
+}
+
 
 @end

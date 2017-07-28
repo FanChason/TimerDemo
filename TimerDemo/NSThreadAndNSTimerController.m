@@ -22,12 +22,8 @@ static NSInteger Count = 100;
     [super viewDidLoad];
     
     self.timerLbl.text = [NSString stringWithFormat:@"%zi",Count];
-    
     [self threadTimerMethod];
-    
-    
 }
-
 
 /**
  NSThread
@@ -46,7 +42,7 @@ static NSInteger Count = 100;
     @autoreleasepool
     {
         //在当前Run Loop中添加timer，模式是默认的NSDefaultRunLoopMode
-        [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timer_callback) userInfo:nil repeats:YES];
+        self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timer_callback) userInfo:nil repeats:YES];
         //开始执行新线程的Run Loop
         [[NSRunLoop currentRunLoop] run];
     }
@@ -55,9 +51,22 @@ static NSInteger Count = 100;
 //timer的回调方法
 - (void)timer_callback
 {
+    Count--;
+    self.timerLbl.text = [NSString stringWithFormat:@"%zi",Count];
     NSLog(@"Timer %@", [NSThread currentThread]);
 }
 
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    
+    if (self.timer) {
+        [self.timer invalidate];
+        self.timer = nil;
+    }
+    
+    Count = 100;
+}
 
 
 @end

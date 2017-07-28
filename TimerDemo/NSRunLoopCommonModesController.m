@@ -33,4 +33,17 @@ static NSInteger Count = 100;
     
 }
 
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    
+    if (self.timer) {
+        [self.timer invalidate];
+        self.timer = nil;
+    }
+    
+    Count = 100;
+}
+
+
 @end
