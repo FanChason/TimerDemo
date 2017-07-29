@@ -1,7 +1,9 @@
 ## 结合NSRunLoop，NSThread, GCD 认识定时器（NSTimer）与 UIScrollView的冲突
 
 #### 1，NSRunLoopCommonModes和Timer
+
 ##### 1> scheduledTimerWithTimeInterval创建
+
 ```
 /**
  scheduledTimerWithTimeInterval
@@ -20,7 +22,7 @@
 
 ##### 2> timerWithTimeInterval创建
 
-######有4中情况，都可以尝试一下：
+###### 有4种情况，都可以尝试一下：
 
 *请注意下面前两种情况区别，以及前两种和后两种的区别*
 
@@ -94,12 +96,14 @@
 
 - NSRunLoopCommonModes，这个模式等效于NSDefaultRunLoopMode和NSEventTrackingRunLoopMode的结合
 
-####2，多线程和Timer
+#### 2，多线程和Timer
+
 NSRunLoopCommonModes和Timer中有一个问题，这个Timer本质上是在当前线程的Run Loop中循环执行的，因此Timer的回调方法不是在另一个线程的。那么怎样在真正的多线程环境下运行一个Timer呢？
 
 很显然多线程能很好的帮我们解决问题。
 
-#####1>  NSThread和Timer
+##### 1>  NSThread和Timer
+
 ```
 /**
  NSThread
@@ -135,7 +139,8 @@ NSRunLoopCommonModes和Timer中有一个问题，这个Timer本质上是在当�
 
 
 
-#####2>  GCD和Timer
+##### 2>  GCD和Timer
+
 GCD中的Timer应该是最灵活的，而且是多线程的。GCD中的Timer是靠Dispatch Source来实现的。
 ```
 /**
@@ -173,8 +178,7 @@ GCD中的Timer应该是最灵活的，而且是多线程的。GCD中的Timer是�
 ![GCDAndNSTimer.gif](http://upload-images.jianshu.io/upload_images/1432381-1c241a43bdc5847d.gif?imageMogr2/auto-orient/strip)
 
 
+#### 参考延伸：
 
-demo源码：**[TimerDemo](https://github.com/xianChaoFan/TimerDemo)**
-####参考延伸：
-[iOS: NSTimer使用小记](https://www.mgenware.com/blog/?p=459)
+[iOS: NSTimer使用小记](https://www.mgenware.com/blog/?p=459) 
 [深入理解RunLoop](http://www.cocoachina.com/ios/20150601/11970.html)
