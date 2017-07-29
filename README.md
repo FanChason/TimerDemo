@@ -1,6 +1,6 @@
-#结合NSRunLoop，NSThread, GCD 认识定时器（NSTimer）与 UIScrollView的冲突
+## 结合NSRunLoop，NSThread, GCD 认识定时器（NSTimer）与 UIScrollView的冲突
 
-####1，NSRunLoopCommonModes和Timer
+#### 1，NSRunLoopCommonModes和Timer
 ##### 1> scheduledTimerWithTimeInterval创建
 ```
 /**
