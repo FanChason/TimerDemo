@@ -1,4 +1,4 @@
-## 结合NSRunLoop，NSThread, GCD 认识定时器（NSTimer）与 UIScrollView的冲突
+# 结合NSRunLoop，NSThread, GCD 认识定时器（NSTimer）与 UIScrollView的冲突
 
 #### 1，NSRunLoopCommonModes和Timer
 
@@ -142,6 +142,7 @@ NSRunLoopCommonModes和Timer中有一个问题，这个Timer本质上是在当�
 ##### 2>  GCD和Timer
 
 GCD中的Timer应该是最灵活的，而且是多线程的。GCD中的Timer是靠Dispatch Source来实现的。
+
 ```
 /**
      dispatch_source_create 创建timer
@@ -181,4 +182,5 @@ GCD中的Timer应该是最灵活的，而且是多线程的。GCD中的Timer是�
 #### 参考延伸：
 
 [iOS: NSTimer使用小记](https://www.mgenware.com/blog/?p=459) 
+
 [深入理解RunLoop](http://www.cocoachina.com/ios/20150601/11970.html)
